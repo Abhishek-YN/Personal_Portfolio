@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/66a705d2ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logoabhi.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" style="cursor: pointer;"></i>
+            </nav>
+            <div class="header-text">
+                <p>DSA Enthusiast & Frontend Web Designer</p>
+                <h1>Hi, I'm <span>Abhishek</span></h1>
+            </div>
+        </div>
+    </div>
+<!--------------------------About-------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="abhiuser.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>HI I am Abhishek Yadav from Nepal. I had completed my study from Nepal and now I was completing my
+                        Bachelor in computer science and Engineering
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills',event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('Projects',event)">Projects</p>
+                    </div>
+<!--------------------------SKILLS---------------------------------->
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages:</span><br>Java(preferred), C, JavaScript, SQL</li>
+                            <li><span>Coursework:</span><br>Object-Oriented Programming, DBMS, Operating System, Computer Network</li>
+                            <li><span>Areas of Interest:</span><br>Data Structures & Algorithms (DSA) – for problem-solving and coding <br><br>Frontend Web Development – passionate about building interactive and user-friendly websites
+                            <br><br>UI/UX Design Principles – interested in designing clean, intuitive user interfaces <br><br></li>
+                        </ul>
+                    </div>
+
+<!-- ------------------------EXPERINCE--------------------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front End Developer:</span><br>
+                                Self-Taught Frontend Developer Jan 2024 – Present Learned and practiced HTML, CSS, JavaScript, React.js, and
+                                Java and built mini projects to apply frontend skills <br>Gained hands-on experience with responsive design and API
+                                integration</li>
+                        </ul>
+                    </div>
+<!-- -----------------------PROJECTS----------------------->
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Music Player</span><br>Created a simple music player UI using HTML, CSS, and JavaScript
+                                – Added features like play, pause, next/previous, and progress bar Designed a responsive layout for both desktop</li>
+
+                            <li><span>Image Gallery</span><br>Technologies Used: HTML, CSS, JavaScript
+                                 Created a responsive image gallery web page showcasing a collection of images 
+                                 arranged in a clean grid layout.Implemented hover effects and basic interactivity 
+                                 using CSS and JavaScript and responsive layout techniques.This project demonstrated core frontend skills 
+                                 including DOM manipulation, styling, and layout control.</li>
+                            
+                            <li><span>Personal Portfolio Website</span><br>Technologies Used: HTML, CSS, JavaScript
+                                <br>Designed and developed a personal portfolio website to showcase my projects, skills, and contact information. The site includes a responsive navigation bar, about section, services, portfolio gallery, and contact form connected to Google Sheets for message submissions. Demonstrated strong understanding of frontend development, form handling, layout design, and clean UI/UX practices.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------services------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design clean, responsive, and attractive websites using HTML, CSS, and JavaScript. 
+                   My focus is on creating user-friendly layouts that look great on all devices.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX</h2>
+                <p>I create simple and smooth user interfaces that are easy to use and visually appealing. 
+                    I focus on making the user’s experience clear and enjoyable.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fas fa-lightbulb"></i>
+                <h2>Problem Solving(DSA)</h2>
+                <p> I regularly practice Data Structures and Algorithms to improve my logical thinking 
+                    and coding skills, helping me write better and optimized code.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+    <!-- ----------------contact----------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane"></i>abhishek77yn@gmail.com</p>
+                    <p><i class="fa fa-phone-square-alt"></i>9827673486</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume_abhi.pdf"download  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="copy-right">
+        <p>Designed and developed by me with<i class="fas fa-heart"></i></p>
+     </div>
+ </div>
+    <script src="Portfolio.js"></script>
+</body>
+</html>
